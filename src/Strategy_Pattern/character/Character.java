@@ -1,4 +1,6 @@
-package Strategy_Pattern;
+package Strategy_Pattern.character;
+
+import Strategy_Pattern.behavior.WeaponBehavior;
 
 public abstract class Character {
     private WeaponBehavior weaponBehavior;
