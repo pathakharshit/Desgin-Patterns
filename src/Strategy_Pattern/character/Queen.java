@@ -1,4 +1,6 @@
-package Strategy_Pattern;
+package Strategy_Pattern.character;
+
+import Strategy_Pattern.behavior_impl.BowAndArrowBehavior;
 
 public class Queen extends Character {
     public Queen() {

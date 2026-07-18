@@ -1,4 +1,6 @@
-package Strategy_Pattern;
+package Strategy_Pattern.character;
+
+import Strategy_Pattern.behavior_impl.SwordBehavior;
 
 public class King extends Character {
     public King() {
