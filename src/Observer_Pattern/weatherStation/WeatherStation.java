@@ -1,0 +1,19 @@
+package Observer_Pattern.weatherStation;
+
+import Observer_Pattern.display.CurrentConditionsDisplay;
+import Observer_Pattern.display.ForeCastDisplay;
+import Observer_Pattern.display.StatisticsDisplay;
+import Observer_Pattern.weather.WeatherData;
+
+public class WeatherStation {
+    public static void main(String[] args) {
+        WeatherData weatherData = new WeatherData();
+        CurrentConditionsDisplay currentConditionsDisplay = new CurrentConditionsDisplay(weatherData);
+        StatisticsDisplay statisticsDisplay = new StatisticsDisplay(weatherData);
+        ForeCastDisplay foreCastDisplay = new ForeCastDisplay(weatherData);
+
+        weatherData.setMeasurements(80, 65, 30.4f);
+        weatherData.setMeasurements(82, 70, 29.2f);
+        weatherData.setMeasurements(78, 90, 29.2f);
+    }
+}
